@@ -94,6 +94,7 @@ const menuItems = [
     id: "exports",
     route: "/exports"
   },
+
 ]
 
 
@@ -151,10 +152,12 @@ const AppSidebar = ({ activeTab, setActiveTab }: AppSidebarProps) => {
           </div>
           <ThemeToggle />
         </div>
-        <SidebarMenuButton onClick={() => setActiveTab("settings")}>
-          <Settings className="h-4 w-4" />
-          <span>Settings</span>
-        </SidebarMenuButton>
+        <Link href="/settings">
+          <SidebarMenuButton onClick={() => setActiveTab("settings")}>
+            <Settings className="h-4 w-4" />
+            <span>Settings</span>
+          </SidebarMenuButton>
+        </Link>
       </SidebarFooter>
 
       <SidebarRail />
