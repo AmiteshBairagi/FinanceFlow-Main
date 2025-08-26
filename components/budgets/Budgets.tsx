@@ -11,7 +11,7 @@ import { CreateBudgetModal } from "@/components/modal/budget/CreateBudgetModal"
 import { EditBudgetModal } from "@/components/modal/budget/EditBudgetModal"
 import { useState } from "react"
 
-export function Budgets() {
+const Budgets = () =>  {
   const [isCreateBudgetModalOpen, setIsCreateBudgetModalOpen] = useState(false)
   const [isEditBudgetModalOpen, setIsEditBudgetModalOpen] = useState(false)
   const [selectedBudget, setSelectedBudget] = useState<any>(null)
@@ -242,3 +242,6 @@ export function Budgets() {
     </div>
   )
 }
+
+export default Budgets
+
