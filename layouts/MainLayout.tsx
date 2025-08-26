@@ -20,9 +20,9 @@ const MainLayoutContent = ({ children }: { children: React.ReactNode }) => {
                     //     : 'lg:ml-64 ml-0'
                     //     }`}
 
-                    className="flex-1"
+                    className="flex-1 "
                 >
-                    <Navbar activeTab={activeTab} />
+                    <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-2 border-b px-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"><Navbar activeTab={activeTab} /></div>
                     <main >
                         <div className="p-4 lg:p-6">
                             <div className="animate-fade-in">
