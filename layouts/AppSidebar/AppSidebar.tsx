@@ -128,7 +128,7 @@ const AppSidebar = ({ activeTab, setActiveTab }: AppSidebarProps) => {
                   <Link href={item.route}>
                     <SidebarMenuButton isActive={activeTab === item.id} onClick={() => setActiveTab(item.id)}>
                       <item.icon className="h-4 w-4" />
-                      <span>{item.title}</span>
+                      <span className="text-sm">{item.title}</span>
                     </SidebarMenuButton>
                   </Link>
                 </SidebarMenuItem>
